@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Younes Bousbaa</title>
+<meta name="description" content="Younes Bousbaa, interne en pharmacie hospitalière, expert IA en santé et co-fondateur de Racyne. Enregistre mon contact.">
+<meta name="theme-color" content="#1f5c4a">
+<style>
+:root{--bg:#f6f4ee;--card:#fff;--ink:#1b2a26;--muted:#5b6a64;--brand:#1f5c4a;--on-brand:#fff;--line:#e3e0d6;--accent:#c76f1a;--ease:cubic-bezier(.2,.7,.2,1)}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1f1a;--card:#17302a;--ink:#eef3f0;--muted:#a9bbb4;--brand:#6cc9a3;--on-brand:#0b1a15;--line:#264539;--accent:#f0a458}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;justify-content:center;padding:24px 16px 40px}
+main{width:100%;max-width:440px}
+.hero{text-align:center;margin-bottom:20px}
+.avatar{width:112px;height:112px;border-radius:50%;margin:0 auto 14px;background:var(--brand);color:var(--on-brand);display:grid;place-items:center;font-size:40px;font-weight:700;border:4px solid var(--card)}
+.photo{display:none;position:relative;margin:0 auto 18px;border-radius:22px;overflow:hidden;box-shadow:0 6px 22px rgba(0,0,0,.22);aspect-ratio:4/5;max-height:440px;background:var(--card)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;display:block;animation:kb 2.2s var(--ease) both}
+.photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:48px 16px 18px;background:linear-gradient(transparent,rgba(0,0,0,.72));color:#fff;font-size:28px;font-weight:800;text-align:center;line-height:1.15;animation:cap .8s .6s var(--ease) both}
+.has-photo .photo{display:block}.has-photo .avatar{display:none}
+h1{font-size:28px;line-height:1.15;margin:0 0 6px}
+.role{margin:0;color:var(--muted)}
+.motto{margin:14px auto 0;font-size:18px;font-weight:600;color:var(--accent);max-width:320px}
+.btn{display:flex;align-items:center;gap:14px;width:100%;padding:14px 18px;margin-top:12px;border-radius:14px;text-decoration:none;font-weight:600;font-size:17px;color:var(--ink);background:var(--card);border:1px solid var(--line);min-height:58px}
+.btn small{display:block;font-weight:400;font-size:13px;color:var(--muted)}
+.btn svg{flex:none;width:26px;height:26px}
+.btn.primary{background:var(--brand);color:var(--on-brand);border-color:var(--brand);font-size:19px;min-height:68px;position:relative;overflow:hidden}
+.btn.primary small{color:inherit;opacity:.85}
+.btn.primary::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:shine 1.2s 1.8s ease-out 1 both}
+.need{margin-top:12px;padding:16px 18px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
+.need h2{margin:0 0 6px;font-size:17px}
+.need ul{margin:0;padding-left:20px}
+.need li{margin:7px 0}
+.need p{margin:10px 0 0;color:var(--muted);font-size:14px}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin-top:12px}
+.tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:12px 6px;min-height:78px;border-radius:14px;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);font:inherit;font-weight:600;font-size:14px;cursor:pointer;-webkit-appearance:none;appearance:none}
+.tile svg{width:24px;height:24px}
+.ico{display:grid;place-items:center;width:24px;height:24px;border-radius:6px;background:var(--brand);color:var(--on-brand);font-size:12px;font-weight:800}
+.qr{display:none;margin-top:12px;padding:18px;border-radius:14px;background:#fff;border:1px solid var(--line);text-align:center;color:#1b2a26}
+.qr.open{display:block;animation:up .4s var(--ease) both}
+.qr svg{width:min(240px,100%);height:auto;display:block;margin:0 auto 8px}
+.qr p{margin:0;font-size:14px}
+.foot{margin-top:24px;text-align:center;color:var(--muted);font-size:13px}
+.btn:focus-visible,.tile:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.btn:active,.tile:active{transform:scale(.98)}
+.rv{opacity:0;animation:up .6s var(--ease) forwards;animation-delay:calc(var(--i,0)*90ms + 150ms)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes kb{from{transform:scale(1.12)}to{transform:scale(1)}}
+@keyframes cap{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes shine{to{left:130%}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1}}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero rv" style="--i:0">
+    <figure class="photo" id="photo"><figcaption>Tout est possible !</figcaption></figure>
+    <div class="avatar" id="avatar">YB</div>
+    <h1>Younes Bousbaa</h1>
+    <p class="role">Interne en pharmacie hospitalière</p>
+    <p class="role">Expert IA en santé · Co-fondateur de Racyne</p>
+    <p class="motto" id="motto">Tout est possible : transformer les contraintes en opportunités.</p>
+  </section>
+
+  <a class="btn primary rv" style="--i:1" href="younes-bousbaa.vcf">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21v-1a6 6 0 0 1 6-6h2"/><path d="M18 14v7M14.5 17.5h7"/></svg>
+    <span>Enregistrer mon contact<small>Ajoute ma fiche à ton répertoire</small></span>
+  </a>
+
+  <section class="need rv" style="--i:2">
+    <h2>Pensez à moi si…</h2>
+    <ul>
+      <li>vous avez une question de pharmacie : hôpital, clinique, officine ou industrie</li>
+      <li>vous voulez automatiser quelque chose ou mettre en place une solution numérique</li>
+      <li>vous avez un projet d'IA ou de numérique en santé</li>
+      <li>vous cherchez un pont avec le Canada, le Maroc ou la Chine</li>
+    </ul>
+    <p>Un mail suffit.</p>
+  </section>
+
+  <a class="btn rv" style="--i:3" href="mailto:ybousbaa.pro@gmail.com?subject=Suite%20au%20Forum%20des%20m%C3%A9tiers"><svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Écris-moi<small>Une question, un projet, un mot de soutien</small></span></a>
+
+  <div class="row rv" style="--i:4">
+    <a class="tile" data-key="linkedin" href="#"><span class="ico">in</span>LinkedIn</a>
+    <a class="tile" data-key="racyne" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21c0-9 5-15 15-16 0 10-6 15-15 16z"/><path d="M5 21c3-5 6-8 10-10"/></svg>Racyne</a>
+    <a class="tile" data-key="github" href="#"><span class="ico">&lt;/&gt;</span>GitHub</a>
+  </div>
+
+  <div class="row rv" style="--i:5">
+    <button class="tile" id="share" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg><span id="shareLabel">Partager ma page</span></button>
+    <button class="tile" id="qrbtn" type="button" aria-expanded="false" aria-controls="qr"><svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg><span>Montrer le QR code</span></button>
+  </div>
+  <div class="qr" id="qr"><svg viewBox="0 0 33 33" shape-rendering="crispEdges" role="img" aria-label="QR code de la page" class="segno"><path fill="#fff" d="M0 0h33v33h-33z"/><path class="qrline" stroke="#000" d="M2 2.5h7m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m3 0h7m-29 1h1m5 0h1m1 0h2m2 0h3m3 0h1m3 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m1 0h3m3 0h3m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h4m2 0h1m2 0h1m4 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m3 0h2m4 0h1m2 0h2m1 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m3 0h2m4 0h1m3 0h1m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h2m2 0h1m2 0h1m-16 1h1m5 0h1m1 0h1m1 0h1m4 0h1m1 0h1m1 0h1m1 0h2m2 0h3m-26 1h2m1 0h1m4 0h6m2 0h2m3 0h2m1 0h2m-28 1h2m4 0h1m1 0h1m1 0h1m1 0h7m1 0h1m-21 1h6m2 0h3m2 0h1m4 0h4m1 0h1m1 0h1m-26 1h4m1 0h3m1 0h2m1 0h2m1 0h2m1 0h3m1 0h2m4 0h1m-29 1h3m1 0h1m2 0h1m1 0h1m5 0h10m2 0h2m-25 1h3m3 0h2m3 0h1m1 0h1m3 0h1m1 0h4m-25 1h1m1 0h2m2 0h2m2 0h1m5 0h2m1 0h1m1 0h2m1 0h1m1 0h1m-28 1h1m2 0h4m1 0h4m2 0h3m1 0h1m1 0h1m1 0h1m1 0h2m-27 1h4m4 0h2m1 0h1m1 0h7m2 0h3m1 0h3m-29 1h2m4 0h1m1 0h1m1 0h2m3 0h6m4 0h1m2 0h1m-29 1h1m2 0h2m2 0h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h1m1 0h1m1 0h1m-24 1h1m1 0h2m1 0h2m4 0h2m1 0h1m2 0h1m2 0h5m1 0h3m-21 1h2m1 0h1m2 0h2m1 0h2m1 0h1m3 0h2m-26 1h7m2 0h4m2 0h3m1 0h2m1 0h1m1 0h3m-27 1h1m5 0h1m3 0h2m2 0h3m2 0h2m3 0h1m2 0h1m-28 1h1m1 0h3m1 0h1m2 0h1m1 0h4m1 0h1m1 0h8m2 0h1m-29 1h1m1 0h3m1 0h1m3 0h2m1 0h9m3 0h2m1 0h1m-29 1h1m1 0h3m1 0h1m3 0h8m3 0h7m-28 1h1m5 0h1m2 0h2m3 0h3m2 0h1m2 0h5m1 0h1m-29 1h7m1 0h3m2 0h3m1 0h1m1 0h1m1 0h2m2 0h2"/></svg><p>Scanne pour ouvrir la page de Younes</p></div>
+
+  <a class="btn rv" style="--i:6" data-key="has" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3z"/></svg><span>Université d'automne de la HAS<small>Pose ta question en vidéo avant le 2 novembre 2026</small></span></a>
+
+  <p class="foot">Forum des métiers · 23 octobre 2026</p>
+</main>
+<script>
+(function(){
+  var LINKS = {"linkedin": "https://www.linkedin.com/in/younes-bousbaa-", "racyne": "https://www.racynehealth.com/", "github": "https://github.com/younes-bsb", "has": "https://lnkd.in/ep4nki9e"};
+  document.querySelectorAll('[data-key]').forEach(function(a){
+    var u = LINKS[a.getAttribute('data-key')];
+    if(u){ a.href = u; a.target = '_blank'; a.rel = 'noopener'; } else { a.remove(); }
+  });
+  var sb = document.getElementById('share'), lab = document.getElementById('shareLabel');
+  function flash(t){ lab.textContent = t; setTimeout(function(){ lab.textContent = 'Partager ma page'; }, 2200); }
+  if(sb){ sb.addEventListener('click', function(){
+    var url = location.href, data = {title:'Younes Bousbaa', text:'Younes Bousbaa : contact et liens', url:url};
+    if(navigator.share){ navigator.share(data).catch(function(){}); }
+    else if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){ flash('Lien copié !'); }, function(){ flash(url); });
+    } else { flash(url); }
+  }); }
+  var qb = document.getElementById('qrbtn'), qp = document.getElementById('qr');
+  if(qb && qp){ qb.addEventListener('click', function(){
+    var open = qp.classList.toggle('open'); qb.setAttribute('aria-expanded', open ? 'true':'false');
+    if(open){ qp.scrollIntoView({behavior:'smooth', block:'center'}); }
+  }); }
+  // Photo facultative : déposer photo.jpg à côté de index.html
+  var img = new Image();
+  img.onload = function(){
+    document.getElementById('photo').insertBefore(img, document.getElementById('photo').firstChild);
+    document.querySelector('.hero').classList.add('has-photo');
+    document.getElementById('motto').textContent = 'Transformer les contraintes en opportunités.';
+  };
+  img.alt = 'Younes Bousbaa';
+  img.src = 'photo.jpg';
+})();
+</script>
+</body>
+</html>
